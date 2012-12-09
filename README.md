@@ -3,8 +3,9 @@
 .vim folder containing all plugins and settings for Vim
 
 ## Usage
-1. Clone repo
-2. Rename repo to .vim
-3. Create .vim_tmp directory
-4. Create .vim_tmp/backup directory
-5. Create .vim_tmp/tmp directory
+1. `git clone git@github.com:samchandra/dotvim.git`
+2. `mv dotvim .vim`
+3. `ln -s .vim/.vimrc .vimrc`
+4. `mkdir .vim_tmp`
+5. `mkdir .vim_tmp/backup`
+6. `mkdir .vim_tmp/tmp`
