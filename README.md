@@ -9,3 +9,6 @@
 4. `mkdir .vim_tmp`
 5. `mkdir .vim_tmp/backup`
 6. `mkdir .vim_tmp/tmp`
+
+## Removing plugin
+Remove the plugin folder from the bundle directory

@@ -62,6 +62,9 @@ map <c-n> :bn<cr>
 
 " Cursor highlights *************************************************
 
+" cursor column color is defined in the color scheme
+set cursorcolumn
+
 " this is for macvim
 if has('gui_running')
   set cursorline
@@ -98,7 +101,7 @@ set linebreak               " Wrap at word
 nmap <leader>d :NERDTreeToggle<CR>
 
 " Insert Mode Mappings **********************************************
-" imap jj <Esc>
+imap jj <Esc>
 " imap uu _
 " imap hh =>
 " imap aa @
