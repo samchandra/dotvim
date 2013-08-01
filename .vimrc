@@ -16,6 +16,8 @@ call pathogen#infect()
 set nocompatible             " not compatible to old vi
 let mapleader = ","          " change mapleader from \ to ,
 
+let g:slime_target = "tmux"
+
 set backspace=indent,eol,start
 set number                  " line numbering
 
