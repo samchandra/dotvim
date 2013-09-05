@@ -110,8 +110,9 @@ imap jj <Esc>
 
 
 " Plugin Config *****************************************************
-filetype plugin on
-filetype plugin indent on   " to show current filetype use: set ft
+filetype on
+filetype indent on
+filetype plugin on   " to show current filetype use: set ft
 
 au BufRead,BufNewFile *.viki set ft=viki
 
