@@ -3,7 +3,7 @@
 .vim folder containing all plugins and settings for Vim
 
 ## Usage
-1. `git clone git@github.com:samchandra/dotvim.git`
+1. `git clone https://github.com/samchandra/dotvim.git`
 2. `mv dotvim .vim`
 3. `ln -s .vim/.vimrc .vimrc`
 4. `mkdir .vim_tmp`
