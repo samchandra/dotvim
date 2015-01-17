@@ -16,8 +16,6 @@ call pathogen#infect()
 set nocompatible             " not compatible to old vi
 let mapleader = ","          " change mapleader from \ to ,
 
-let g:slime_target = "tmux"
-
 set backspace=indent,eol,start
 set number                  " line numbering
 
@@ -80,6 +78,7 @@ set smartcase               " Ignore case when searching lowercase
 
 " Colors ************************************************************
 set term=xterm-256color
+set synmaxcol=90
 syntax on                   " syntax highlighting
 colorscheme neverland-darker
 
@@ -108,19 +107,15 @@ imap jj <Esc>
 " imap hh =>
 " imap aa @
 
-
 " Plugin Config *****************************************************
 filetype on
 filetype indent on
 filetype plugin on   " to show current filetype use: set ft
 
-au BufRead,BufNewFile *.viki set ft=viki
-
 " Some mods *********************************************************
-function! OpenApiDockRuby(keyword)
-  let url = 'http://apidock.com/rails/'.a:keyword
-  call system("open -a Safari ". url)
-endfunction
-
-noremap RR :call OpenApiDockRuby(expand('<cword>')) <CR>
-
+" function! OpenApiDockRuby(keyword)
+"  let url = 'http://apidock.com/rails/'.a:keyword
+"   call system("open -a Safari ". url)
+" endfunction
+" 
+" noremap RR :call OpenApiDockRuby(expand('<cword>')) <CR>
